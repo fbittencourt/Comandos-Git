@@ -1,0 +1,58 @@
+(-h para obter informações sobre)
+git config (-h para consultar os comandos cabíveis)
+
+git init (para criar um novo repositório no GIT)
+
+git add (para adicionar arquivos ao índice, por exemplo, o seguinte comando irá adicionar um arquivo chamado temp.txt presente no diretório local para o índice) - git add temp.txt
+
+git clone (usado para fins de verificação de repositório, se o repositório estiver em um servidor remoto, use por exemplo : git clone git@github.com:fbittencourt/toy.git , localizado nos repositórios do github) por outro lado, se uma cópia de trabalho de um repositório local for criada, use: git clone /path/to/repository (para clonar pasta local no terminal)
+
+git commit (é usado para confirmar as alterações na cabeça, tenha em atenção que quaisquer alterações efetuadas naõ irão para o repositório remoto) git commit -m "comentário para descrever o arquivo no histórico de versões ou commit"
+
+git status (exibe a lista de arquivos alterados juntamente com os arquivos que ainda não foram adicionados ou confirmados)
+
+git push (envia as alterações feitas para o ramo mestre do repositório remoto associado ao diretório de trabalho) para enviar ao github, git push origin master (ou main)
+
+git checkout (usado para criar ramos ou alternar entre eles) por exemplo: para criar um novo ramo e mudar para ele : git checkout -b <branch-name> (pode ser main, master ou outro), para simplesmente mudar de um ramo para o outro, use: git checkout <branch-name>
+
+git remote (permite que um usuário se conecte a um repositório remoto) O comando a seguir lista os repositorios remotos atualmente configurados: git remote -v , esse comando permite que o usuário se conecte a um servidor remoto: git remote add origin <93.188.160.58>
+
+git branch (usado para listar, criar ou excluir ramos) para listar todos os ramos presentes no repositório, use: git branch , para excluir um ramo: git branch -d <branch name>
+
+git pull (para mesclar as alteraçoes presentes no repositório remoto para o diretório de trabalho local, o comando pull é usado): git pull
+
+git merge (é usado para mesclar uma ramificação no ramo ativo): git merge <branch-name>
+
+git diff (é usado para listar os conflitos): git diff --base <file-name> , o seguinte comando é usado para exibir os conflitos entre ramos about-to-be-merged antes de mesclá-los: git diff <source-branch> <target-branch> , para simplesmente listar todos os conflitos atuais use :  git diff
+
+git tag (a marcação é usada para marcar compromissos específicos com alças simples): git tag 1.1.0 <insert-commitID-here)
+
+git log (exibe uma lista de compromissos em uma ramificação, juntamente com os detalhes pertinentes)
+
+git reset (para redefinir o índice e o diretório de trabalho para o estado do último commit, o comando git reset é usado): git reset --hard HEAD
+
+git rm (usado para remover arquivos do índice e do diretório de rtabalho): git rm filename.txt
+
+git stash (ajuda a salvar as mudanças que não devem ser cometidos imediatamente, mas em uma base temporária)
+
+git fetch (permite que um usuário obtenha todos os objetos do reposito´rio remoto que atualmente não residem no diretório de trabalho local): git fetch origin
+
+git ls-tree (para exibir um objeto de árvore juntamente com o nome e o modo de cada item e o valor SHA-A do blob, use o comando git ls-tree): git ls-tree HEAD
+
+git cat-file (usando o valor SHA-1, exiba o tipo de um objeto usando o comando git cat-file): git cat-file -p d670460b4b4aece5915caf5c68d12f560a9fe3e4
+
+git grep (permite que um usuário procure através das árvores de conteúdo frases e/ ou palavras, exemplo, para pesquisar www.hostinger.com em todos os arquivos use:) git grep "www.hostinger.com"
+
+gitk (é a interface gráfica para um repositório local que pode ser invocado digitando e executando)
+
+git instaweb (um servidor web pode ser executado em interface com o repositório local, um navegador da web também é automaticamente direcionado para ele): git instaweb -httpd=webrick
+
+git gc (para otimirzar o repositório através da coleta de lixo, que irá limpar arquivos desnecessários e otimizá-los)
+
+git archive (permite que um usuário crie um arquivo zip ou tar contendo componentes de uma única árvore de repositório): git archive --format= tar master (ou main)
+
+git prune (os objetos que não têm ponteiros de entrada são excluídos)
+
+git fsck (para executar uma verificação de integridade do sistema de arquivos git, use o comando, todos os projetos corrompidos são identificados)
+
+git rebase (é usado para reaplicação de compromissos em outro ramo): git rebase master
