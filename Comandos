@@ -35,7 +35,7 @@ git rm (usado para remover arquivos do índice e do diretório de rtabalho): git
 
 git stash (ajuda a salvar as mudanças que não devem ser cometidos imediatamente, mas em uma base temporária)
 
-git fetch (permite que um usuário obtenha todos os objetos do reposito´rio remoto que atualmente não residem no diretório de trabalho local): git fetch origin
+git fetch (permite que um usuário obtenha todos os objetos do repositório remoto que atualmente não residem no diretório de trabalho local): git fetch origin
 
 git ls-tree (para exibir um objeto de árvore juntamente com o nome e o modo de cada item e o valor SHA-A do blob, use o comando git ls-tree): git ls-tree HEAD
 
